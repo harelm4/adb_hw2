@@ -1,0 +1,48 @@
+<component name="libraryTable">
+  <library name="Hibernate" type="hibernate">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/ant-1.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/ant-antlr-1.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/ant-junit-1.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/ant-launcher-1.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/ant-swing-1.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/antlr-2.7.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/asm-attrs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/asm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/c3p0-0.9.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/cglib-2.1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/checkstyle-all.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/cleanimports.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/commons-collections-2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/commons-logging-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/concurrent-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/connector.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/ehcache-1.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/hibernate-3.2.6.ga.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/jaas.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/jacc-1_0-fr.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/javassist.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/jaxen-1.1-beta-7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/jboss-cache.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/jboss-common.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/jboss-jmx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/jboss-system.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/jdbc2_0-stdext.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/jgroups-2.2.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/jta.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/junit-3.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/log4j-1.2.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/ojdbc14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/oscache-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/proxool-0.8.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/swarmcache-1.0rc2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/syndiag2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/versioncheck.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/xerces-2.6.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../בסיסי נתונים/depenensies/hibernate jars/xml-apis.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

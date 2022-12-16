@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Entity.LoginLogEntity" table="LoginLog" schema="dbo" catalog="moshayof">
+        <id name="userid">
+            <column name="USERID" sql-type="numeric(18)" precision="18"/>
+        </id>
+        <property name="logintime">
+            <column name="LOGINTIME" sql-type="datetime" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
