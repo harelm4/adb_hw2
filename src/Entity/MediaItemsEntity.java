@@ -41,4 +41,12 @@ public class MediaItemsEntity {
     public int hashCode() {
         return Objects.hash(mid, prodYear);
     }
+
+    @Override
+    public String toString() {
+        return "MediaItemsEntity{" +
+                "mid=" + mid +
+                ", prodYear=" + prodYear +
+                '}';
+    }
 }

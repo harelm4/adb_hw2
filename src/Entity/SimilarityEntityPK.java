@@ -41,4 +41,12 @@ public class SimilarityEntityPK implements Serializable {
     public int hashCode() {
         return Objects.hash(mid1, mid2);
     }
+
+    @Override
+    public String toString() {
+        return "SimilarityEntityPK{" +
+                "mid1=" + mid1 +
+                ", mid2=" + mid2 +
+                '}';
+    }
 }

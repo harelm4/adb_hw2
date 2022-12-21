@@ -42,4 +42,12 @@ public class LoginLogEntity {
     public int hashCode() {
         return Objects.hash(userid, logintime);
     }
+
+    @Override
+    public String toString() {
+        return "LoginLogEntity{" +
+                "userid=" + userid +
+                ", logintime=" + logintime +
+                '}';
+    }
 }

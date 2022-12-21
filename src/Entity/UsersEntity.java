@@ -97,4 +97,17 @@ public class UsersEntity {
     public int hashCode() {
         return Objects.hash(userid, username, password, firstName, lastName, dateOfBirth, registrationDate);
     }
+
+    @Override
+    public String toString() {
+        return "UsersEntity{" +
+                "userid=" + userid +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", registrationDate=" + registrationDate +
+                '}';
+    }
 }

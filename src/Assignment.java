@@ -1,7 +1,4 @@
-import Entity.AdministratorsEntity;
-import Entity.HistoryEntity;
-import Entity.MediaItemsEntity;
-import Entity.UsersEntity;
+import Entity.*;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -9,7 +6,9 @@ import org.hibernate.Transaction;
 import org.jboss.util.NotImplementedException;
 
 import java.sql.Date;
+import java.sql.Time;
 import java.time.LocalDateTime;
+import java.util.Calendar;
 import java.util.List;
 
 public class Assignment {
@@ -152,20 +151,114 @@ public class Assignment {
         }
     }
     public static List getHistory (String userid){
+        //distinct
+
+//        Session session= hib.HibernateUtil.currentSession();
+//        int res=0;
+//        try {
+//            res = (int) session.createQuery("select distinct(users.userid) from UsersEntity users where users.registrationDate > CURRENT_DATE()-"+n).list().get(0);
+//
+//
+//        }
+//        catch (HibernateException e){
+//            System.out.println(e);
+//
+//        }
+//        finally {
+//            hib.HibernateUtil.closeSession();
+//            return res;
+//        }
+
         throw new NotImplementedException();
     }
     public static void insertToLog (String userid){
-        throw new NotImplementedException();
+        Session session = hib.HibernateUtil.currentSession();
+        Transaction tx = null;
+        long millis=System.currentTimeMillis();
+        java.sql.Date date = new java.sql.Date(millis);
+        long uid = Long.parseLong((String.valueOf(userid)));
+
+        try {
+            tx = session.beginTransaction();
+            LoginLogEntity log_data = new LoginLogEntity();
+            log_data.setLogintime(date);
+            log_data.setUserid(uid);
+            session.save(log_data);//????
+            tx.commit();
+            System.out.println("Good job, The insertion to log table was successful! ");
+
+        }catch (HibernateException e){
+            System.out.println(e);
+        }finally {
+            hib.HibernateUtil.closeSession();
+        }
+
+
     }
-    public static int getNumberOfRegistredUsers(int n){
-        throw new NotImplementedException();
+    public static long getNumberOfRegistredUsers(int n){
+
+        Session session= hib.HibernateUtil.currentSession();
+        long res=0;
+        List res1=null;
+        try {
+            //res = (int) session.createQuery("select count(users.userid) from UsersEntity users where users.registrationDate > CURRENT_DATE()-"+n).list().get(0);
+            Query   q = (session.createQuery("select count(users.userid) from UsersEntity users where users.registrationDate > CURRENT_DATE()-"+n));
+            res1 = q.list();
+            res = (long) res1.get(0);
+
+        }
+        catch (HibernateException e){
+            System.out.println(e);
+
+        }
+        finally {
+            hib.HibernateUtil.closeSession();
+
+        }
+        return res;
     }
     public static List getUsers (){
-        throw new NotImplementedException();
+        Session session = hib.HibernateUtil.currentSession();
+        List<UsersEntity> res_list = null;
+        try {
+            Query query= session.createQuery("select u from UsersEntity u");
+            res_list = query.list();
+            if (res_list.size()==0){
+                return null;
+            }
+            return res_list;
+        }
+        catch (HibernateException e){
+            System.out.println(e);
+        }
+        finally {
+            hib.HibernateUtil.closeSession();
+        }
+        return res_list;
     }
     public static UsersEntity getUser (String userid){
-        throw new NotImplementedException();
+        Session session = hib.HibernateUtil.currentSession();
+        UsersEntity res = null;
+        long userid1 = Long.parseLong((String.valueOf(userid)));
+        try {
+            Query query= session.createQuery("select u from UsersEntity u where u.userid=:userid1");
+            query.setParameter("userid1",userid1);
+            List<UsersEntity> res_list = query.list();
+            if (res_list.size()>0){
+            res = res_list.get(0);}
+            return res;
+        }
+        catch (HibernateException e){
+            System.out.println(e);
+        }
+        finally {
+            hib.HibernateUtil.closeSession();
+        }
+        return res;
     }
+
+
+
 
 
 }

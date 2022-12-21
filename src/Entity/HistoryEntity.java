@@ -54,4 +54,13 @@ public class HistoryEntity {
     public int hashCode() {
         return Objects.hash(userid, mid, viewtime);
     }
+
+    @Override
+    public String toString() {
+        return "HistoryEntity{" +
+                "userid=" + userid +
+                ", mid=" + mid +
+                ", viewtime=" + viewtime +
+                '}';
+    }
 }

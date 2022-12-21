@@ -52,4 +52,13 @@ public class AdministratorsEntity {
     public int hashCode() {
         return Objects.hash(adminid, username, password);
     }
+
+    @Override
+    public String toString() {
+        return "AdministratorsEntity{" +
+                "adminid=" + adminid +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }

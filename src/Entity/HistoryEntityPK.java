@@ -53,4 +53,13 @@ public class HistoryEntityPK implements Serializable {
     public int hashCode() {
         return Objects.hash(userid, mid, viewtime);
     }
+
+    @Override
+    public String toString() {
+        return "HistoryEntityPK{" +
+                "userid=" + userid +
+                ", mid=" + mid +
+                ", viewtime=" + viewtime +
+                '}';
+    }
 }

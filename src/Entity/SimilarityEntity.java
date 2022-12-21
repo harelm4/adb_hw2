@@ -53,4 +53,13 @@ public class SimilarityEntity {
     public int hashCode() {
         return Objects.hash(mid1, mid2, similarity);
     }
+
+    @Override
+    public String toString() {
+        return "SimilarityEntity{" +
+                "mid1=" + mid1 +
+                ", mid2=" + mid2 +
+                ", similarity=" + similarity +
+                '}';
+    }
 }
